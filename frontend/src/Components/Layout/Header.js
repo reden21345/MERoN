@@ -33,11 +33,14 @@ const Header = ({cartItems}) => {
     return (
         <Fragment>
             <nav className="navbar row">
-                <div className="col-12 col-md-3">
+            <Link to="/" style={{ textDecoration: 'none' }} >
+            <div className="col-12 col-md-3">
                     <div className="navbar-brand">
                         <img src="./images/shopit_logo.png" />
                     </div>
                 </div>
+            </Link>
+                
                 <div className="col-12 col-md-6 mt-2 mt-md-0">
                     <Search />
                 </div>
